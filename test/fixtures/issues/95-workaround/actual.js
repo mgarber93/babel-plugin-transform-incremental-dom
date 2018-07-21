@@ -1,15 +1,16 @@
 
 function renderMain() {
   function renderState({ bar }) {
+    const workAround = t => t;
     return ([
       <span
-        foo={ `My bar is: ${bar}` }
+        foo={ workAround`My bar is: ${bar}`}
       >one</span>,
       <span
-        foo={ `My bar is: ${bar}` }
+        foo={ workAround`My bar is: ${bar}`}
       >two</span>,
       <span
-        foo={ `My bar is: ${bar}` }
+        foo={ workAround`My bar is: ${bar}`}
       >three</span>
     ]);
   }
